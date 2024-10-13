@@ -21,10 +21,10 @@ const OrderSuccess = () => {
       <Toaster />
       <div className="container">
         <div className="order-success-container">
-          <h2>Order Placed Successfully!</h2>
+          <h2>{`Order Placed Successfully!`}</h2>
           <p>
-            Thank you for your order. We have received your request and are
-            processing it. You will receive an update shortly.
+            {`Thank you for your order. We have received your request and are
+            processing it. You will receive an update shortly.`}
           </p>
 
           <div className="text-center">

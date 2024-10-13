@@ -41,7 +41,7 @@ const SignUp = () => {
         <h2>Create an Account</h2>
         <form>
           <div className="form-group">
-            <label htmlFor="name">Full Name:</label>
+            <label htmlFor="name">{`Full Name:`}</label>
             <input
               type="text"
               className="form-control"
@@ -53,7 +53,7 @@ const SignUp = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="email">Email:</label>
+            <label htmlFor="email">{`Email:`}</label>
             <input
               type="email"
               className="form-control"
@@ -65,7 +65,7 @@ const SignUp = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="password">Password:</label>
+            <label htmlFor="password">{`Password:`}</label>
             <input
               type="password"
               className="form-control"
@@ -77,7 +77,7 @@ const SignUp = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="phone">Contact Number:</label>
+            <label htmlFor="phone">{`Contact Number:`}</label>
             <input
               type="number"
               className="form-control"
@@ -100,7 +100,7 @@ const SignUp = () => {
           </button>
         </form>
         <p className="mt-3">
-          Already have an account? <a href="/login">Login</a>
+          {`Already have an account?`} <a href="/login">Login</a>
         </p>
       </div>
     </>

@@ -15,9 +15,9 @@ export default function Home() {
         />
         <ol>
           <li>
-            Get started by editing <code>src/app/page.js</code>.
+            Get started by editing <code>{`src/app/page.js`}</code>.
           </li>
-          <li>Save and see your changes instantly.</li>
+          <li>{`Save and see your changes instantly.`}</li>
         </ol>
 
         <div className={styles.ctas}>
@@ -87,7 +87,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Go to nextjs.org →
+          {` Go to nextjs.org →`}
         </a>
       </footer>
     </div>

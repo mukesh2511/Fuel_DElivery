@@ -42,7 +42,7 @@ const Login = () => {
         <h2>Login to Your Account</h2>
         <form>
           <div className="form-group">
-            <label htmlFor="username"> Email:</label>
+            <label htmlFor="username"> {`Email:`}</label>
             <input
               type="text"
               className="form-control"
@@ -54,7 +54,7 @@ const Login = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="password">Password:</label>
+            <label htmlFor="password">{`Password:`}</label>
             <input
               type="password"
               className="form-control"
@@ -74,7 +74,7 @@ const Login = () => {
           </button>
         </form>
         <p className="mt-3">
-          Don't have an account? <a href="/signup">Sign Up</a>
+          {` Don't have an account?`} <a href="/signup">Sign Up</a>
         </p>
       </div>
     </>

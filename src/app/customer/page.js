@@ -13,22 +13,22 @@ const CustomerProfile = () => {
   }, []); // The empty dependency array ensures this runs once after the initial render
 
   if (!user) {
-    return <div>Loading...</div>; // Handle the case where user data is not yet available
+    return <div>{`Loading...`}</div>; // Handle the case where user data is not yet available
   }
 
   return (
     <div className="container">
-      <h2>Customer Profile</h2>
+      <h2>{`Customer Profile`}</h2>
       <div className="profile-info">
-        <h4>Profile Information</h4>
+        <h4>{`Profile Information`}</h4>
         <p>
-          <strong>Name:</strong> {user.name}
+          <strong>{`Name:`}</strong> {user.name}
         </p>
         <p>
-          <strong>Email:</strong> {user.email}
+          <strong>{`Email:`}</strong> {user.email}
         </p>
         <p>
-          <strong>Contact Number:</strong> {user.phone}
+          <strong>{`Contact Number:`}</strong> {user.phone}
         </p>
         {/* <p>
           <strong>Delivery Address:</strong> Mum, MH 65
@@ -36,7 +36,7 @@ const CustomerProfile = () => {
       </div>
       <div className="text-center">
         <a href="/order" className="btn btn-success btn-custom">
-          Order Fuel
+          {`Order Fuel`}
         </a>
       </div>
     </div>

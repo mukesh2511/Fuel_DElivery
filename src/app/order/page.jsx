@@ -24,7 +24,7 @@ const OrderFuel = () => {
         <h2>Order Fuel</h2>
         <form>
           <div className="form-group">
-            <label htmlFor="fuelType">Select Fuel Type:</label>
+            <label htmlFor="fuelType">{`Select Fuel Type:`}</label>
             <select
               className="form-control"
               id="fuelType"
@@ -33,7 +33,7 @@ const OrderFuel = () => {
               required
             >
               <option value="" disabled>
-                Select fuel type
+                {` Select fuel type`}
               </option>
               <option value="petrol">Petrol</option>
               <option value="diesel">Diesel</option>
@@ -41,7 +41,7 @@ const OrderFuel = () => {
             </select>
           </div>
           <div className="form-group">
-            <label htmlFor="quantity">Quantity (liters):</label>
+            <label htmlFor="quantity">{`Quantity (liters):`}</label>
             <input
               type="number"
               className="form-control"
@@ -53,7 +53,7 @@ const OrderFuel = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="deliveryAddress">Delivery Address:</label>
+            <label htmlFor="deliveryAddress">{`Delivery Address:`}</label>
             <textarea
               className="form-control"
               id="deliveryAddress"
@@ -68,28 +68,28 @@ const OrderFuel = () => {
             className="btn btn-success"
             onClick={handleClick}
           >
-            Place Order
+            {` Place Order`}
           </button>
         </form>
 
         <div className="order-summary">
           <h4>Order Summary</h4>
           <p>
-            <strong>Fuel Type:</strong> {fuelType || "N/A"}
+            <strong>{`Fuel Type:`}</strong> {fuelType || "N/A"}
           </p>
           <p>
-            <strong>Quantity:</strong> {quantity || "N/A"} liters
+            <strong>{`Quantity:`}</strong> {quantity || "N/A"} liters
           </p>
           <p>
-            <strong>Delivery Address:</strong> {deliveryAddress || "N/A"}
+            <strong>{`Delivery Address:`}</strong> {deliveryAddress || "N/A"}
           </p>
         </div>
 
         <p className="mt-3">
-          View your profile? <a href="/customer">Customer Profile</a>
+          {` View your profile?`} <a href="/customer">Customer Profile</a>
         </p>
         <p>
-          Already have an account? <a href="/login">Login</a>
+          {`Already have an account?`} <a href="/login">Login</a>
         </p>
       </div>
     </>
