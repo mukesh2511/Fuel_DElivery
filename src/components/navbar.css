@@ -1,0 +1,55 @@
+/* Navbar.css */
+.navbar {
+  background-color: #4caf50; /* Green background for the navbar */
+  padding: 15px 20px; /* Padding around the navbar */
+}
+
+.navbar-brand {
+  font-size: 1.5rem; /* Larger font size for the brand */
+  font-weight: bold;
+  color: white; /* Brand name in white */
+}
+
+.navbar-brand:hover {
+  color: #f4f4f4; /* Slight hover effect for brand */
+}
+
+.navbar-toggler-icon {
+  color: white; /* Toggler icon color for smaller screens */
+}
+
+.nav-link {
+  color: white; /* Navbar links in white */
+  padding: 0 15px;
+}
+
+.nav-link:hover {
+  color: #e0e0e0; /* Light hover effect for links */
+}
+
+.nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid white; /* Active link with underline effect */
+}
+
+.btn-primary {
+  background-color: #f57c00; /* Custom orange for buttons */
+  border: none; /* Remove borders */
+}
+
+.btn-primary:hover {
+  background-color: #f4511e; /* Darker hover color for buttons */
+}
+
+/* Media Query for Mobile */
+@media (max-width: 767px) {
+  .navbar {
+    padding: 10px;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .btn {
+    margin: 5px 0;
+  }
+}
